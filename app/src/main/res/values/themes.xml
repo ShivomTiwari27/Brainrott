@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base Application Theme -->
     <style name="Theme.BrainRotKiller" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:statusBarColor">@color/bg_dark</item>
@@ -12,9 +12,5 @@
     <!-- Fullscreen Detox Lockout Screen Theme -->
     <style name="Theme.BrainRotKiller.Fullscreen" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:windowBackground">@color/bg_dark</item>
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:windowKeepScreenOn">true</item>
-        <item name="android:windowShowWhenLocked">true</item>
-        <item name="android:windowTurnScreenOn">true</item>
     </style>
 </resources>

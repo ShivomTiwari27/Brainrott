@@ -39,16 +39,15 @@ jobs:
           echo "APK_EXISTS=true" >> $GITHUB_ENV
         else
           echo "APK_EXISTS=false" >> $GITHUB_ENV
-          # Truncate output to last 200 lines for release body
-          tail -n 120 gradle_output.txt > release_body.txt
+          grep -C 4 -i "error:" gradle_output.txt > release_body.txt || tail -n 80 gradle_output.txt > release_body.txt
         fi
 
     - name: Create Failure Release with Log
       if: env.APK_EXISTS == 'false'
       uses: softprops/action-gh-release@v2
       with:
-        tag_name: v1.0.3
-        name: "Build Log"
+        tag_name: v1.0.4
+        name: "Build Failure Debug Log"
         body_path: release_body.txt
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -57,8 +56,8 @@ jobs:
       if: env.APK_EXISTS == 'true'
       uses: softprops/action-gh-release@v2
       with:
-        tag_name: v1.0.3
-        name: "BrainRot Killer v1.0.3 (Direct APK Download)"
+        tag_name: v1.0.4
+        name: "BrainRot Killer v1.0.4 (Direct APK Download)"
         body: |
           ### 🧠 BrainRot Killer APK
           Download the **`app-debug.apk`** below directly to your Android device and tap to install!
