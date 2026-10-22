@@ -55,13 +55,12 @@ jobs:
       if: github.ref == 'refs/heads/main'
       uses: softprops/action-gh-release@v2
       with:
-        tag_name: v1.0.0
-        name: "BrainRot Killer v1.0.0 (Direct APK)"
+        tag_name: v1.0.1
+        name: "BrainRot Killer v1.0.1 (Direct APK Download)"
         body: |
           ### 🧠 BrainRot Killer APK
-          - Download `app-debug.apk` below directly to your Android device.
-          - Tap to install (enable "Install unknown apps" if prompted).
-          - Open the app and grant Accessibility Permission to activate the scroll limit and screen lock!
-        files: app/build/outputs/apk/debug/app-debug.apk
+          Download the **`app-debug.apk`** below directly to your Android device and tap to install!
+        files: |
+          app/build/outputs/apk/debug/*.apk
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
