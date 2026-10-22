@@ -438,14 +438,7 @@
                     <com.google.android.material.slider.Slider
                         android:id="@+id/sliderReelLimit"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:stepSize="1.0"
-                        app:value="10.0"
-                        app:valueFrom="3.0"
-                        app:valueTo="30.0"
-                        app:thumbColor="@color/primary_accent"
-                        app:trackColorActive="@color/primary_accent"
-                        app:trackColorInactive="@color/card_dark_elevated" />
+                        android:layout_height="wrap_content" />
 
                     <!-- Lockout Duration Slider -->
                     <LinearLayout
@@ -477,14 +470,7 @@
                     <com.google.android.material.slider.Slider
                         android:id="@+id/sliderCooldown"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:stepSize="1.0"
-                        app:value="10.0"
-                        app:valueFrom="2.0"
-                        app:valueTo="60.0"
-                        app:thumbColor="@color/electric_purple"
-                        app:trackColorActive="@color/electric_purple"
-                        app:trackColorInactive="@color/card_dark_elevated" />
+                        android:layout_height="wrap_content" />
 
                     <View
                         android:layout_width="match_parent"

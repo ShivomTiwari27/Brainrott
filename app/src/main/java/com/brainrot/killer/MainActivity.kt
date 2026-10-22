@@ -125,10 +125,16 @@ class MainActivity : AppCompatActivity() {
 
     private fun loadSavedPreferences() {
         val limit = preferencesManager.reelLimit
+        binding.sliderReelLimit.valueFrom = 3f
+        binding.sliderReelLimit.valueTo = 30f
+        binding.sliderReelLimit.stepSize = 1f
         binding.sliderReelLimit.value = limit.toFloat()
         binding.tvReelLimitDisplay.text = "$limit reels"
 
         val cooldown = preferencesManager.cooldownMinutes
+        binding.sliderCooldown.valueFrom = 2f
+        binding.sliderCooldown.valueTo = 60f
+        binding.sliderCooldown.stepSize = 1f
         binding.sliderCooldown.value = cooldown.toFloat()
         binding.tvCooldownDisplay.text = "$cooldown mins"
 
