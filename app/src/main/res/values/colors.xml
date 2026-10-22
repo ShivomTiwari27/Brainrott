@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Detox Theme Colors -->
+    <color name="bg_dark">#090D16</color>
+    <color name="card_dark">#131D2E</color>
+    <color name="card_dark_elevated">#1E2C44</color>
+    <color name="stroke_subtle">#233550</color>
+
+    <color name="primary_accent">#10B981</color>       <!-- Emerald green (Freedom/Detox) -->
+    <color name="primary_accent_light">#34D399</color>
+    <color name="warning_crimson">#F43F5E</color>       <!-- Alert Rose / Crimson -->
+    <color name="electric_purple">#8B5CF6</color>
+
+    <color name="text_high">#F8FAFC</color>
+    <color name="text_medium">#94A3B8</color>
+    <color name="text_muted">#64748B</color>
+
+    <color name="pill_bg">#D90F172A</color>
+    <color name="pill_stroke">#38BDF8</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

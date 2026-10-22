@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">BrainRot Killer</string>
+    <string name="accessibility_service_description">Monitors short-form video feeds (Instagram Reels, YouTube Shorts, TikTok) to count scrolls and automatically locks your phone or blocks the app when you hit your limit.</string>
+
+    <!-- Notification strings -->
+    <string name="notif_channel_name">Reel Limiter Monitor</string>
+    <string name="notif_channel_desc">Shows active scroll count and limit alerts</string>
+    <string name="notif_active_title">BrainRot Killer is Active</string>
+    <string name="notif_status_content">Scrolled %1$d / %2$d reels today</string>
+    <string name="notif_limit_reached_title">Limit Reached! 🛑</string>
+    <string name="notif_limit_reached_msg">You hit your reel limit. Time for a detox break!</string>
+
+    <!-- UI Strings -->
+    <string name="status_service_active">Shield Active</string>
+    <string name="status_service_inactive">Shield Disabled</string>
+    <string name="btn_enable_accessibility">Grant Accessibility</string>
+    <string name="btn_enable_overlay">Grant Overlay Permission</string>
+    <string name="btn_battery_optimization">Disable Battery Restriction</string>
+    <string name="label_reel_limit">Reels Allowed Per Session</string>
+    <string name="label_cooldown_time">Lockout / Detox Duration</string>
+    <string name="label_lock_action">Action on Limit Reached</string>
+    <string name="action_turn_off_screen">Lock Phone &amp; Turn Off Screen</string>
+    <string name="action_block_screen">Show Detox Lockout Screen</string>
+    <string name="toggle_floating_pill">Show Floating Scroll Counter Pill</string>
+</resources>

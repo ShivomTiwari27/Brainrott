@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Outer Shield Contour -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M54,20 C70,20 84,28 84,46 C84,70 54,88 54,88 C54,88 24,70 24,46 C24,28 38,20 54,20 Z" />
+    <!-- Inner Lock Pad -->
+    <path
+        android:fillColor="#090D16"
+        android:pathData="M44,48 h20 v20 h-20 z" />
+    <path
+        android:strokeColor="#090D16"
+        android:strokeWidth="3"
+        android:pathData="M48,48 V42 A6,6 0 0 1 60,42 V48" />
+</vector>
